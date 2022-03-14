@@ -16,6 +16,7 @@ nginx -t && systemctl reload nginx
 
 #!/bin/bash
 rsync --exclude *.csr --exclude *.key --exclude *.conf --ignore-existing /etc/letsencrypt/renewal/kln.ac.lk/ /var/www/ssl.ict.kln.ac.lk/htdocs/
+wo clean --all
 
 **ssl-acme.sh 
 
