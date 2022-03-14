@@ -11,6 +11,7 @@ vi /etc/nginx/conf.d/map-wp-fastcgi-cache.conf
  
 nginx -t && systemctl reload nginx
 
+================================================
 **ssl-rsync.sh
 
 #!/bin/bash
@@ -44,6 +45,9 @@ rsync --exclude *.csr --exclude *.key --exclude *.conf --ignore-existing /etc/le
 -d *.medicine.kln.ac.lk \
 -d *.ghrusa.kln.ac.lk \
 --dns dns_cf --force
+
+================================
+chmod 755 ssl-*
 
 crontab -e
 
